@@ -8,8 +8,8 @@
 }
 html, body{width: 100%;height: 100%;margin: 0;padding: 0;}
 ul,li{list-style: none;padding: 0;}
-.parent{display: flex;height: 100%;font-family: avenir-next-bold, sans-serif;}
-.sidebar{background: #0e0e0e;width:370px;min-height:600px;padding:31px 22px;align-items: center;text-align: center;}
+.parent{display: flex;height: 100%;font-family: avenir-next-bold, sans-serif;align-items: stretch;}
+.sidebar{background: #0e0e0e;width:370px;min-height: 100vh;padding:31px 22px;align-items: center;text-align: center;}
 .sidebar .logo{height: 52px;margin-bottom:21px;display: block;}
 .sidebar form{position: relative;overflow-x: hidden;padding-bottom: 130px;}
 .sidebar form input{width: 100%;border:0;font-size: 30px;background: transparent;border-bottom: 4px solid #373737;outline: none;padding:0 0 2px 48px;color: #ffffff;}
