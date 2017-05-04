@@ -1,0 +1,23 @@
+@font-face {
+    font-family: avenir-next-bold;
+    src: url("../fonts/avenir-next-bold.eot")
+}
+@font-face {
+    font-family: andale-mono;
+    src: url("../fonts/Andale-Mono.ttf")
+}
+html, body{width: 100%;height: 100%;margin: 0;padding: 0;}
+ul,li{list-style: none;padding: 0;}
+.parent{display: flex;height: 100%;font-family: avenir-next-bold, sans-serif;}
+.sidebar{background: #0e0e0e;width:370px;min-height:600px;padding:31px 22px;align-items: center;text-align: center;}
+.sidebar .logo{height: 52px;margin-bottom:21px;display: block;}
+.sidebar form{position: relative;overflow-x: hidden;padding-bottom: 130px;}
+.sidebar form input{width: 100%;border:0;font-size: 30px;background: transparent;border-bottom: 4px solid #373737;outline: none;padding:0 0 2px 48px;color: #ffffff;}
+.sidebar form button{position: absolute;left:14px;top:0;background: transparent url("../images/search-icon.svg") no-repeat;background-size: 100% 100%;width: 28px;height: 30px;cursor: pointer;border:none;}
+.parent-menu a{color: #3c3c3c;text-decoration: none;font-family: avenir-next-bold, sans-serif;font-size: 24px;font-weight: bold;}
+.parent-menu>li{padding-bottom: 25px;}
+.child-menu{padding: 27px 0 26px 0;}
+.parent-menu .active-menu-list,.parent-menu a:hover{color: #ffffff;}
+.child-menu li{padding-bottom: 21px;}
+.child-menu li:last-child{padding-bottom: 0;}
+.child-menu li a{font-family: andale-mono,sans-serif;}
