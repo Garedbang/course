@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Adidas - course</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
     <link href="styles/index.css" rel="stylesheet">
-
-  </head>
-  <body>
+</head>
+<body>
 <main class="parent">
     <aside class="sidebar">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-      <form>
-        <button type="submit"></button>
-        <input type="search">
-      </form>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <form>
+            <button type="submit"></button>
+            <input type="search">
+        </form>
         <nav>
             <ul class="parent-menu">
                 <li>
@@ -44,6 +44,40 @@
             </ul>
         </nav>
     </aside>
+    <section>
+        <header>
+            <form action="get">
+                <button type="button" class="toggle-filter">
+                    <div></div>
+                </button>
+                <span class="gender-type-filter"><button type="button" class="active-filter-item">MAN</button><button
+                    type="button">WOMAN</button></span>
+                <span class="size-filter">SIZE
+                    <button type="button">36</button>
+                    <button type="button">37</button>
+                    <button type="button">38</button>
+                    <button type="button">39</button>
+                    <button type="button">40</button>
+                    <button type="button" class="active-filter-item">41</button>
+                    <button type="button">42</button>
+                </span>
+            </form>
+        </header>
+        <main class="row content-block">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <img src="images/content-img-1.jpg" alt="">
+                <a href="#">170$</a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <img src="images/content-img-1.jpg" alt="">
+                <a href="#">170$</a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <img src="images/content-img-1.jpg" alt="">
+                <a href="#">170$</a>
+            </div>
+        </main>
+    </section>
 </main>
-  </body>
+</body>
 </html>
