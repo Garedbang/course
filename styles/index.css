@@ -8,12 +8,13 @@
 }
 html, body{width: 100%;height: 100%;margin: 0;padding: 0;}
 ul,li{list-style: none;padding: 0;}
+*{box-sizing: border-box}
 button{border: none;cursor: pointer;background: transparent;}
 .parent{display: flex;min-height: 100vh;font-family: avenir-next-bold, sans-serif;align-items: stretch;}
 .sidebar{background: #0e0e0e;width:370px;padding:31px 22px;align-items: center;text-align: center;}
 section{flex: 2;}
 .sidebar .logo{height: 52px;margin-bottom:21px;display: block;}
-.sidebar form{position: relative;overflow-x: hidden;padding-bottom: 130px;}
+.sidebar form{position: relative;padding-bottom: 130px;}
 .sidebar form input{width: 100%;border:0;font-size: 30px;background: transparent;border-bottom: 4px solid #373737;outline: none;padding:0 0 2px 48px;color: #ffffff;}
 .sidebar form button{position: absolute;left:14px;top:0;background: url("../images/search-icon.svg") no-repeat;background-size: 100% 100%;width: 28px;height: 30px;}
 .parent-menu a{color: #3c3c3c;text-decoration: none;font-family: avenir-next-bold, sans-serif;font-size: 24px;font-weight: bold;}
@@ -34,6 +35,7 @@ header .size-filter{vertical-align: super;color: #4d42f8;}
 header .size-filter button{padding: 0;}
 header .size-filter button:first-child{padding-left: 10px;}
 header .active-filter-item,header button:hover{color: #4d42f8;}
+.content-block{margin-right: 0;margin-left: 0;}
 .content-block a{display: block;}
 .content-block div{background-color: #f4f4f4;}
 
