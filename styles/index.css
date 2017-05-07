@@ -1,6 +1,6 @@
 @font-face {
     font-family: avenir-next-bold;
-    src: url("../fonts/avenir-next-bold.eot")
+    src: url("../fonts/avenir-next-bold.ttf")
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: avenir-next-reg;
-    src: url("../fonts/avenir-next-regular.woff")
+    src: url("../fonts/avenir-next-regular.ttf")
 }
 
 html, body {
@@ -82,12 +82,13 @@ section {
 .sidebar form input {
     width: 100%;
     border: 0;
-    font-size: 30px;
+    font-size: 24px;
     background: transparent;
     border-bottom: 4px solid rgba(55, 55, 55, .5);;
     outline: none;
     padding: 0 0 2px 48px;
     color: #3a3a3a;
+    font-weight: bold;
 }
 
 .sidebar form input::-webkit-input-placeholder {
@@ -273,6 +274,11 @@ header .active-filter-item, header button:hover {
     margin-right: 13px;
 }
 
+.product-colors button:hover,.product-colors .active-product-color{
+    height: 21px;
+    width: 21px;
+}
+
 .product-price {
     font-size: 80px;
     color: #e2e2e2;
@@ -289,6 +295,7 @@ header .active-filter-item, header button:hover {
     margin-top: 10px;
     z-index: 1;
     position: relative;
+    font-weight: bold;
 }
 
 .sale-product {
