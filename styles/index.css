@@ -274,11 +274,6 @@ header .active-filter-item, header button:hover {
     margin-right: 13px;
 }
 
-.product-colors button:hover,.product-colors .active-product-color{
-    height: 21px;
-    width: 21px;
-}
-
 .product-price {
     font-size: 80px;
     color: #e2e2e2;
@@ -317,17 +312,17 @@ header .active-filter-item, header button:hover {
 }
 
 .product-images-list img {
-    height: 120px;
+    height: 140px;
     border: solid 5px transparent;
     cursor: pointer;
-    width: 100%;
+    width: 16%;
 }
 
 .product-images-list div img:hover, .product-images-list .active-image {
     border: solid 5px #e8e8ea;
 }
 
-.product-images-list > div {
+.product-images-list>* {
     margin-right: 15px;
     padding: 0;
 }
@@ -337,6 +332,8 @@ header .active-filter-item, header button:hover {
 }
 
 .product-images-list button {
+    flex: 0 1 40px;
+    width: 64px;
     text-align: left;
     font-size: 14px;
     color: #c0c0c0;
@@ -344,7 +341,7 @@ header .active-filter-item, header button:hover {
 }
 
 .grey-lines {
-    width: 100%;
+    width: 160px;
 }
 
 .grey-lines span {
