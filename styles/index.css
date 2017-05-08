@@ -86,7 +86,7 @@ section {
     background: transparent;
     border-bottom: 4px solid rgba(55, 55, 55, .5);;
     outline: none;
-    padding: 0 0 2px 48px;
+    padding: 0 0 6px 48px;
     color: #3a3a3a;
     font-weight: bold;
 }
@@ -235,7 +235,7 @@ header .active-filter-item, header button:hover {
 }
 
 .content-block img {
-    padding: 6px 8px 13px 8px;
+    padding:9px 9px 13px 9px;
     width: 100%;
 }
 
