@@ -1,0 +1,7 @@
+/.bundle
+/log/*.log
+/log/*.log*
+*.log
+.idea/
+
+*.DS_Store
