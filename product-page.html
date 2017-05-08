@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adidas | Product page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-          type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
     <link href="styles/index.css" rel="stylesheet">
 </head>
 <body>
-<main class="parent">
+
+<main class="wrapper">
     <aside class="sidebar">
         <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
         <form>
             <button type="submit"></button>
             <input type="search" placeholder="ULTRA BOOST">
         </form>
-        <nav class="parent-menu">
-            <a href="#" class="active-menu-list">SPORTS</a>
-            <nav class="child-menu">
-                <a href="#" class="active-menu-list">SHOES</a>
+        <nav class="general-catalog">
+            <a href="#" class="catalog-list-active">SPORTS</a>
+            <nav class="child-catalog">
+                <a href="#" class="catalog-list-active">SHOES</a>
                 <a href="#">CLOTHING</a>
                 <a href="#">ACCESORIES</a>
             </nav>
@@ -48,20 +48,28 @@
             </div>
             <button class="save-product">SAVE</button>
             <div class="images-product">
-                <div class="active-product-img  center-xs">
+                <div class="product-img-active  center-xs">
                     <img src="images/product_ultra-boost.jpg" alt="">
                 </div>
                 <div class="product-images-list row middle-xs">
+                    <button type="button" class="product-list-img product-card-img-active">
                         <img src="images/product_ultra-boost_2.jpg" alt="">
+                    </button>
+                    <button type="button" class="product-list-img">
                         <img src="images/product_ultra-boost_3.jpg" alt="">
+                    </button>
+                    <button type="button" class="product-list-img">
                         <img src="images/product_ultra-boost_4.jpg" alt="">
-                        <img class="active-image" src="images/product_ultra-boost.jpg" alt="">
+                    </button>
+                    <button type="button" class="product-list-img">
+                        <img src="images/product_ultra-boost.jpg" alt="">
+                    </button>
                         <div class="grey-lines">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                        <button type="button">
+                        <button type="button" class="product-show-more-button">
                             see 
                             <br>
                             more 
@@ -78,5 +86,6 @@
         <button type="button" class="buy-now-product">BUY NOW</button>
     </section>
 </main>
+
 </body>
 </html>

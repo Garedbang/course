@@ -41,7 +41,7 @@ a {
     cursor: pointer;
 }
 
-.parent {
+.wrapper {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -70,7 +70,7 @@ section {
 
 .sidebar .logo {
     height: 52px;
-    margin-bottom: 21px;
+    margin-bottom: 41px;
     display: block;
 }
 
@@ -113,7 +113,7 @@ section {
     height: 30px;
 }
 
-.parent-menu a {
+.general-catalog a {
     color: #3c3c3c;
     font-family: avenir-next-bold, sans-serif;
     font-size: 24px;
@@ -121,15 +121,15 @@ section {
     display: block;
 }
 
-.parent-menu > a {
+.general-catalog > a {
     padding-bottom: 25px;
 }
 
-.parent-menu .active-menu-list {
+.general-catalog .catalog-list-active {
     position: relative;
 }
 
-.parent-menu > .active-menu-list:after {
+.general-catalog > .catalog-list-active:after {
     content: "";
     background: url("../images/dropdown-icon.svg") no-repeat;
     background-size: 100% 100%;
@@ -139,21 +139,21 @@ section {
     margin: 8px 0 0 20px;
 }
 
-.child-menu {
+.child-catalog {
     padding: 0 0 50px 0;
 }
 
-.parent-menu .active-menu-list, .parent-menu a:hover {
+.general-catalog .catalog-list-active, .general-catalog a:hover {
     color: #ffffff;
 }
 
-.child-menu a {
+.child-catalog a {
     padding-bottom: 21px;
     font-family: andale-mono, sans-serif;
     font-weight: normal;
 }
 
-.child-menu a:last-child, .parent-menu > a:last-child {
+.child-catalog a:last-child, .general-catalog  > a:last-child {
     padding-bottom: 0;
 }
 
@@ -162,14 +162,14 @@ header {
     border-bottom: 3px solid rgba(231, 231, 231, .5);
 }
 
-header button, header .size-filter {
+header button, header .filter-size {
     font-size: 24px;
     font-family: avenir-next-bold, sans-serif;
     font-weight: bold;
     color: #dedede;
 }
 
-header .toggle-filter {
+header .filter-toggle {
     background: #ebebeb;
     padding: 11px 8px;
 }
@@ -180,25 +180,25 @@ header .toggle-filter div {
     height: 33px;
 }
 
-header .gender-type-filter {
+header .filter-gender-type {
     vertical-align: super;
     padding: 0 62px 0 19px;
 }
 
-header .size-filter {
+header .filter-size {
     vertical-align: super;
     color: #4d42f8;
 }
 
-header .size-filter button {
+header .filter-size button {
     padding: 0;
 }
 
-header .size-filter button:first-child {
+header .filter-size button:first-child {
     padding-left: 10px;
 }
 
-header .active-filter-item, header button:hover {
+header .filter-item-active, header button:hover {
     color: #4d42f8;
 }
 
@@ -218,7 +218,7 @@ header .active-filter-item, header button:hover {
     color: #000000;
 }
 
-.content-block a:hover, .content-block .active-product-card a {
+.content-block a:hover, .content-block .product-card-active a {
     background-image: linear-gradient(107deg, #0c09bf, #966dd8);
     color: #ffffff;
 }
@@ -243,14 +243,14 @@ header .active-filter-item, header button:hover {
     background-color: #ff5c5c;
     font-size: 14px;
     color: #ffffff;
-    padding: 6px 19px;
+    padding: 6px 20px;
     position: absolute;
     top: 12px;
     right: 14px;
     display: none;
 }
 
-.content-block .active-product-card span {
+.content-block .product-card-active span {
     display: inherit;
 }
 
@@ -305,20 +305,22 @@ header .active-filter-item, header button:hover {
     z-index: 1;
 }
 
-.active-product-img {
+.product-img-active {
     z-index: 0;
     margin-top: -200px;
     height: 525px;
 }
-
-.product-images-list img {
-    height: 140px;
-    border: solid 5px transparent;
-    cursor: pointer;
+.product-images-list button{
     width: 16%;
+    border: solid 5px transparent;
+}
+.product-images-list button img {
+    height: 140px;
+    cursor: pointer;
+    width: 100%;
 }
 
-.product-images-list div img:hover, .product-images-list .active-image {
+.product-images-list .product-list-img:hover, .product-images-list .product-card-img-active {
     border: solid 5px #e8e8ea;
 }
 
@@ -327,12 +329,12 @@ header .active-filter-item, header button:hover {
     padding: 0;
 }
 
-.product-images-list div:last-child {
+.product-images-list>*:last-child {
     margin-right: 0;
 }
 
-.product-images-list button {
-    flex: 0 1 40px;
+.product-show-more-button {
+    flex: 0 1 55px;
     width: 64px;
     text-align: left;
     font-size: 14px;
@@ -366,14 +368,14 @@ header .active-filter-item, header button:hover {
 
 .buy-now-product {
     background-image: linear-gradient(to right, #4949aa, #27275d);
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 414px);
     padding: 35px 0;
     z-index: 2;
     font-size: 32px;
     color: #ffffff;
+    font-family: avenir-next-bold;
     font-weight: bold
 }
 

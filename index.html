@@ -9,7 +9,8 @@
     <link href="styles/index.css" rel="stylesheet">
 </head>
 <body>
-<main class="parent">
+
+<main class="wrapper">
     <aside class="sidebar">
         <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
         <form>
@@ -17,10 +18,10 @@
             <input type="search">
         </form>
 
-            <nav class="parent-menu">
-                    <a href="#" class="active-menu-list">SPORTS</a>
-                    <nav class="child-menu">
-                        <a href="#" class="active-menu-list">SHOES</a>
+            <nav class="general-catalog">
+                    <a href="#" class="catalog-list-active">SPORTS</a>
+                    <nav class="child-catalog">
+                        <a href="#" class="catalog-list-active">SHOES</a>
                         <a href="#">CLOTHING</a>
                         <a href="#">ACCESORIES</a>
                     </nav>
@@ -31,39 +32,39 @@
     <section>
         <header>
             <form action="get">
-                <button type="button" class="toggle-filter">
+                <button type="button" class="filter-toggle">
                     <div></div>
                 </button>
-                <span class="gender-type-filter"><button type="button" class="active-filter-item">MAN</button><button
+                <span class="filter-gender-type"><button type="button" class="filter-item-active">MAN</button><button
                     type="button">WOMAN</button></span>
-                <span class="size-filter">SIZE
+                <span class="filter-size">SIZE
                     <button type="button">36</button>
                     <button type="button">37</button>
                     <button type="button">38</button>
                     <button type="button">39</button>
                     <button type="button">40</button>
-                    <button type="button" class="active-filter-item">41</button>
+                    <button type="button" class="filter-item-active">41</button>
                     <button type="button">42</button>
                 </span>
             </form>
         </header>
         <main class="row content-block">
-            <div class="col-md-4 col-sm-6 col-xs-12 active-product-card">
-                <div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-card-active">
                     <span>SALE</span>
                     <img src="images/content-img-1.jpg" alt="">
                     <a href="product-page.html">$1024</a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 active-product-card">
-                <div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-card-active">
                     <span>SALE</span>
                     <img src="images/content-img-2.jpg" alt="">
                     <a href="product-page.html">$230</a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 active-product-card">
-                <div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-card-active">
                     <span>SALE</span>
                     <img src="images/content-img-3.jpg" alt="">
                     <a href="product-page.html">$190</a>
@@ -90,22 +91,22 @@
                     <a href="product-page.html">$190</a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 active-product-card">
-                <div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-card-active">
                     <span>SALE</span>
                     <img src="images/content-img-1.jpg" alt="">
                     <a href="product-page.html">$170</a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 active-product-card">
-                <div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-card-active">
                     <span>SALE</span>
                     <img src="images/content-img-1.jpg" alt="">
                     <a href="product-page.html">$230</a>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 active-product-card">
-                <div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="product-card-active">
                     <span>SALE</span>
                     <img src="images/content-img-1.jpg" alt="">
                     <a href="product-page.html">$190</a>
@@ -121,5 +122,6 @@
         </main>
     </section>
 </main>
+
 </body>
 </html>
